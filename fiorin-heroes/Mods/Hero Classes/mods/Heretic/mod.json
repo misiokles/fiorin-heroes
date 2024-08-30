@@ -1,0 +1,9 @@
+{
+	"author" : "FiorIN",
+	"contact" : "http://fior.in/hmm3",
+	"description" : "Heretic Heroes",
+	"modType" : "Heroes",
+	"name" : "Heretic",
+	"heroes" : [ "config/baal" ],
+	"version" : "0.5"
+}

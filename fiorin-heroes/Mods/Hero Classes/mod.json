@@ -1,0 +1,14 @@
+{
+	"version" : "0.1",
+	"author" : "FiorIN",
+	"contact" : "http://fior.in/hmm3",
+	"description" : "New hero classes",
+	"modType" : "Heroes",
+	"name" : "Hero Classes",
+	"heroClasses" : [ 
+		"config/archer",
+		"config/gladiator",
+		"config/artificer",
+		"config/bard"
+	]
+}

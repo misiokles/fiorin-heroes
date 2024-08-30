@@ -1,0 +1,50 @@
+{
+	"hill" : {
+		"army" : [
+			{ "creature" : "archer", "max" : 15, "min" : 10 },
+			{ "creature" : "marksman", "max" : 5, "min" : 2 }
+		],
+		"class" : "archer",
+		"images" : {
+			"large" : "hill/large.png",
+			"small" : "hill/small.png",
+			"specialtyLarge" : "hill/specialtyLarge.png",
+			"specialtySmall" : "hill/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "archery" },
+			{ "level" : "basic", "skill" : "pathfinding" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"archers" :	{ 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "archer", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "NO_DISTANCE_PENALTY"
+				},
+				"elves" :  { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "woodElf", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "NO_DISTANCE_PENALTY"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Howard Hill was an archer who was unofficially referred to as the World's Greatest Archer. He is the only person to win 196 archery field tournaments in succession. He liked to make difficult trick shots, like shooting an apple or prune off someone's head from sixty feet away. He would then perform the same stunt with an even smaller item from a greater distance.",
+			"name" : "Hill",
+			"specialty" : {
+				"description" : "Neither distance and obstacles cause damage penalty.",
+				"name" : "Clean shoot",
+				"tooltip" : "No shooting penalty"
+			}
+		}
+	}
+}

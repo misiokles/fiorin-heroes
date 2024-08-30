@@ -1,0 +1,47 @@
+{
+	"rebeccax" : {
+		"army" : [
+			{ "creature" : "halfling", "max" : 10, "min" : 5 },
+			{ "creature" : "woodElf", "max" : 5, "min" : 2 }
+		],
+		"class" : "necromancer",
+		"images" : {
+			"large" : "rebecca/large.png",
+			"small" : "rebecca/small.png",
+			"specialtyLarge" : "rebecca/specialtyLarge.png",
+			"specialtySmall" : "rebecca/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "archery" },
+			{ "skill" : "artillery", "level": "basic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"upgrade" :	{
+					"subtype" : "creature.walkingDead",
+					"addInfo" : "creature.zombie",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"rebirth" :	{ 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "walkingDead", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "REBIRTH",
+					"val" : 30
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Rebecca have a bunch of followers. Even if they were no more.",
+			"name" : "Rebecca",
+			"specialty" : {
+				"description" : "Rebecca can upgrade Walking Deads to Zombies. Walking dead and zombies rise again when fall in battle.",
+				"name" : "Followers",
+				"tooltip" : "Upgrade Walkind Dead to Zombies. Rebirth Walking dead and Zombies in battle."
+			}
+		}
+	}
+}

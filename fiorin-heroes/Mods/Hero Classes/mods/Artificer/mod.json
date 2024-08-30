@@ -1,0 +1,11 @@
+{
+	"author" : "FiorIN",
+	"contact" : "http://fior.in/hmm3",
+	"description" : "Artificer Heroes",
+	"modType" : "Heroes",
+	"name" : "Artificer",
+	"heroes" : [
+			"config/helm"
+		],
+	"version" : "0.5"
+}

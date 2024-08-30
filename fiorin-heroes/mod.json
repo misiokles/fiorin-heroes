@@ -1,0 +1,19 @@
+{
+    "name" : "Fiorin Heroes",
+    "description" : "Pack of overpowered heroes that can be used for custom maps and campaigns",
+    "author" : "FiorIN",
+    "licenseName" : "Creative Commons Attribution-ShareAlike",
+    "licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
+    "contact" : "http://fior.in",
+    "modType" : "Heroes",
+    "version" : "0.2",
+	"compatibility" :
+	{
+		"min" : "1.5.0"
+	},
+	"changelog" :
+	{
+		"0.2"   : [ "Update to vcmi-1.5 format" ],
+		"0.1"   : [ "Initial release" ]
+	}
+}

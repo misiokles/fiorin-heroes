@@ -1,0 +1,78 @@
+{
+	"artificer" :
+	{
+		"animation" : {
+			"battle" : 
+			{
+				"female" : "artificer/male.def",
+				"male"   : "artificer/female.def"
+			}
+		},
+		"mapObject" : {
+			"templates" : {
+				"default" : { 
+					"animation" : "artificer/adventure.def",
+					"editorAnimation": "artificer/editor.def" 
+				}
+			}
+		},
+		"name" : "Artificer",
+		"faction" : "neutral",
+		"commander" : "halfling",
+		"affinity" : "magic",
+		"primarySkills" :
+		{
+			"attack"     : 0,
+			"defence"    : 1,
+			"spellpower" : 2,
+			"knowledge"  : 3
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 10,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 40
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 20,
+			"defence"    : 20,
+			"spellpower" : 30,
+			"knowledge"  : 30
+		},
+		"secondarySkills" :
+		{ 
+				"archery":2,      
+				"logistics":3,    
+				"wisdom":5,       
+				"mysticism":5, 
+				"ballistics":6,   
+				"eagleEye":3,     
+				"estates":3,      
+				"fireMagic":6,    
+				"scholar":7,      
+				"tactics":2,
+				"artillery":8,    
+				"learning":6,     
+				"offence":1,      
+				"armorer":6,      
+				"intelligence":8,
+				"sorcery":6,      
+				"resistance":6
+		},
+		"defaultTavern" : 4,
+		"tavern" :
+		{
+				"castle" : 4,
+				"conflux" : 0,
+				"dungeon" : 2,
+				"fortress" : 6,
+				"inferno" : 0,
+				"necropolis" : 0,
+				"rampart" : 4,
+				"stronghold" : 4,
+				"tower" : 8
+		}
+	}
+}

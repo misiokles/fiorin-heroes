@@ -1,0 +1,83 @@
+{
+	"archer" :
+	{
+		"animation" : {
+			"battle" : 
+			{
+				"female" : "archer/male.def",
+				"male"   : "archer/female.def"
+			}
+		},
+		"mapObject" : {
+			"templates" : {
+				"default" : { 
+					"animation" : "archer/adventure.def",
+					"editorAnimation": "archer/editor.def" 
+				}
+			}
+		},
+		"name" : "Archer",
+		"faction" : "castle",
+		"commander" : "marksman",
+		"affinity" : "might",
+		"primarySkills" :
+		{
+			"attack"     : 3,
+			"defence"    : 0,
+			"spellpower" : 0,
+			"knowledge"  : 2
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 45,
+			"defence"    : 20,
+			"spellpower" : 15,
+			"knowledge"  : 20
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 30,
+			"defence"    : 15,
+			"spellpower" : 30,
+			"knowledge"  : 25
+		},
+		"secondarySkills" :
+		{
+				"archery" : 9,
+				"armorer" : 6,
+				"artillery" : 6,
+				"ballistics" : 4,
+				"diplomacy" : 4,
+				"eagleEye" : 2,
+				"estates" : 4,
+				"intelligence" : 2,
+				"leadership" : 6,
+				"learning" : 6,
+				"logistics" : 4,
+				"luck" : 8,
+				"mysticism" : 4,
+				"navigation" : 4,
+				"offence" : 4,
+				"pathfinding" : 6,
+				"resistance" : 4,
+				"scholar" : 2,
+				"scouting" : 6,
+				"tactics" : 8,
+				"wisdom" : 6,
+				"firstAid" : 2
+		},
+		"defaultTavern" : 5,
+		"tavern" :
+		{
+				"castle" : 8,
+				"conflux" : 0,
+				"dungeon" : 2,
+				"fortress" : 4,
+				"inferno" : 0,
+				"necropolis" : 3,
+				"rampart" : 6,
+				"stronghold" : 4,
+				"tower" : 2
+		}
+	}
+}

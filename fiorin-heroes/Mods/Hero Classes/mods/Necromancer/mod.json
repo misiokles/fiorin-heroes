@@ -1,0 +1,14 @@
+{
+	"author" : "FiorIN",
+	"contact" : "http://fior.in/hmm3",
+	"description" : "Necromancer Heroes",
+	"modType" : "Heroes",
+	"name" : "Necromancer",
+	"heroes" : [
+			"config/yarina",
+			"config/rebecca",
+			"config/lord"
+	],
+	"spells" : [ "config/summonSkeletons" ],
+	"version" : "0.5"
+}

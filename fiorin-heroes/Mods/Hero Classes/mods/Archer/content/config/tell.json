@@ -1,0 +1,82 @@
+{
+	"tell" : {
+		"army" : [
+			{ "creature" : "halfling", "max" : 10, "min" : 5 },
+			{ "creature" : "woodElf", "max" : 5, "min" : 2 },
+			{ "creature" : "archer", "max" : 5, "min" : 2 }
+		],
+		"class" : "archer",
+		"images" : {
+			"large" : "tell/large.png",
+			"small" : "tell/small.png",
+			"specialtyLarge" : "tell/specialtyLarge.png",
+			"specialtySmall" : "tell/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "archery" },
+			{ "skill" : "artillery", "level": "basic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"addAttack" : { 
+					"limiters" : [ 
+						{ 
+						"parameters" : [ "woodElf", false ], 
+						"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"elves_luck" : { 
+					"limiters" : [ 
+						{ 
+						"parameters" : [ "woodElf", true ], 
+						"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "LUCK",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX"
+				},
+				"archers_luck" :{ 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "archer", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "LUCK",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX"
+				},
+				"elves_shoot" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "woodElf", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "FREE_SHOOTING"
+				},
+				"archers_shot" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "archer", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "FREE_SHOOTING"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "William Tell was known as a strong man, a mountain climber, and an expert shot with the crossbow. A great outlaw successfully shooting an apple from his child's head",
+			"name" : "Tell",
+			"specialty" : {
+				"description" : "Archers under the command of shoot twice and have increased luck.",
+				"name" : "Apple Shot",
+				"tooltip" : "Archers shoot twice and have more luck."
+			}
+		}
+	}
+}

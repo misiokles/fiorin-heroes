@@ -1,0 +1,13 @@
+{
+	"author" : "FiorIN",
+	"contact" : "http://fior.in/hmm3",
+	"description" : "Gladiator Heroes",
+	"modType" : "Heroes",
+	"name" : "Gladiator",
+	"heroes" : [
+		"config/spartacus",
+		"config/crixus",
+		//"config/flamma"
+		],
+	"version" : "0.5"
+}

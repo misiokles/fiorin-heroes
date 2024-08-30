@@ -1,0 +1,11 @@
+{
+	"author" : "FiorIN",
+	"contact" : "http://fior.in/hmm3",
+	"description" : "Death Knight Heroes",
+	"modType" : "Heroes",
+	"name" : "Death Knight",
+	"heroes" : [
+			"config/kira"
+		],
+	"version" : "0.5"
+}

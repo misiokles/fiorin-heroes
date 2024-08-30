@@ -1,0 +1,72 @@
+{
+	"yarina" : {
+		"army" : [
+			{ "creature" : "lich", "max" : 6, "min" : 3 },
+		],
+		"class" : "necromancer",
+		"images" : {
+			"large" : "yarina/large.png",
+			"small" : "yarina/small.png",
+			"specialtyLarge" : "yarina/specialtyLarge.png",
+			"specialtySmall" : "yarina/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "necromancy" },
+			{ "level" : "basic", "skill" : "wisdom" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"summons30HP" : {
+					"type" : "SPECIFIC_SPELL_POWER",
+					"subtype" : "spell.summonSkeletons",
+					"val" : 30,
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "lich", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					]
+				},
+				"resurrects" : {
+					"type" : "SPELLCASTER",
+					"subtype" : "spell.summonSkeletons",
+					"val" : 0,
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "lich", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					]
+				},
+				"castsAmount" :
+				{
+					"type" : "CASTS",
+					"val" : 1,
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "lich", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					]
+				},
+				"free_shot" : { 
+					"limiters" : [ 
+						{ "parameters" : [ "lich", true ], 								
+						"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "FREE_SHOOTING" 
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Fascinated with the mysteries of the afterlife, Yarina isolated herself from a young age to study the dark arts.",
+			"name" : "Yarina",
+			"specialty" : {
+				"description" : "Lichs under Yarina command can ressurect creatures as skeletons.",
+				"name" : "Come back here!",
+				"tooltip" : "Lichs can resurrect creatures as skeletons."
+			}
+		}
+	}
+}

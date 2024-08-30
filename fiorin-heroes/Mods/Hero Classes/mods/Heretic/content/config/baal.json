@@ -1,0 +1,118 @@
+{
+	"baal" : {
+		"army" : [
+			{ "creature" : "magog", "max" : 10, "min" : 4 }
+		],
+		"class" : "heretic",
+		"images" : {
+			"large" : "baal/large.png",
+			"small" : "baal/small.png",
+			"specialtyLarge" : "baal/specialtyLarge.png",
+			"specialtySmall" : "baal/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "fireMagic" },
+			{ "level" : "basic", "skill" : "wisdom" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"fireShield" : {
+						"type" : "FIRE_SHIELD"
+				},
+				"fireMagic" : {
+					"subtype" : "fire",
+					"type" : "MAGIC_SCHOOL_SKILL",
+					"val" : 5,
+					"targetSourceType" : "SECONDARY_SKILL",
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				},
+				"fireImmFam" : {
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "familiar", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"subtype" : "spellSchool.fire",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+				},
+				"fireImmGog" :	{
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "gog", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"subtype" : "spellSchool.fire",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+				},
+				"fireImmHounds" : {
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "hellHound", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"subtype" : "spellSchool.fire",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+				},
+				"fireImmHDemon" : {
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "demon", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"subtype" : "spellSchool.fire",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+				},
+				"fireImmFiends" : {
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "pitFiend", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"subtype" : "spellSchool.fire",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+				},
+				"fireImmEfreet" : {
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "efreet", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"subtype" : "spellSchool.fire",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+				},
+				"fireImmDevils" : {
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "devil", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"subtype" : "spellSchool.fire",
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"val" : 100
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Baal is the fire personification.",
+			"name" : "Baal",
+			"specialty" : {
+				"description" : "Infernal creatures under Baal command have fire damage immunity and fire shield. Fire spells have effective bonus.",
+				"name" : "Hell Fire",
+				"tooltip" : "Infernal creatures have fire damage immunity and fire shield. Bonus to fire spells."
+			}
+		}
+	}
+}

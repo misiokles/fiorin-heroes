@@ -1,0 +1,117 @@
+{
+	"lord" : {
+		"army" : [
+			{ "creature" : "skeleton", "max" : 10, "min" : 5 },
+			{ "creature" : "skeletonWarrior", "max" : 10, "min" : 5 }
+		],
+		"class" : "necromancer",
+		"images" : {
+			"large" : "lord/large.png",
+			"small" : "lord/small.png",
+			"specialtyLarge" : "lord/specialtyLarge.png",
+			"specialtySmall" : "lord/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "necromancy" },
+			{ "level" : "basic", "skill" : "diplomacy" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"pikeman" : {
+					"subtype" : "creature.pikeman",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"halberdier" :	{
+					"subtype" : "creature.halberdier",
+					"addInfo" : "creature.skeletonWarrior",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"gremlin" : {
+					"subtype" : "creature.gremlin",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"masterGremlin" :	{
+					"subtype" : "creature.masterGremlin",
+					"addInfo" : "creature.skeletonWarrior",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"imp" :	{
+					"subtype" : "creature.imp",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"familiar"	: {
+					"subtype" : "creature.familiar",
+					"addInfo" : "creature.skeletonWarrior",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"troglodyte" :	{
+					"subtype" : "creature.troglodyte",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"infernalTroglodyte" :	{
+					"subtype" : "creature.infernalTroglodyte",
+					"addInfo" : "creature.skeletonWarrior",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"goblin" : {
+					"subtype" : "creature.goblin",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"hobgoblin" : {
+					"subtype" : "creature.hobgoblin",
+					"addInfo" : "creature.skeletonWarrior",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"gnoll" :	{
+					"subtype" : "creature.gnoll",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"gnollMarauder" :	{
+					"subtype" : "creature.gnollMarauder",
+					"addInfo" : "creature.skeletonWarrior",
+					"type" : "SPECIAL_UPGRADE"
+				},					
+				"pixie" : {
+					"subtype" : "creature.pixie",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"sprite" : {
+					"subtype" : "creature.sprite",
+					"addInfo" : "creature.skeletonWarrior",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"peasant" :	{
+					"subtype" : "creature.peasant",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"halfling" : {
+					"subtype" : "creature.halfling",
+					"addInfo" : "creature.skeleton",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"rogue" : {
+					"subtype" : "creature.rogue",
+					"addInfo" : "creature.skeletonWarrior",
+					"type" : "SPECIAL_UPGRADE"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "They say Lord is just a gravedigger... since ever. I hope so!",
+			"name" : "Lord",
+			"specialty" : {
+				"description" : "Lord can turn humanoids level 1 creatures into skeletons.",
+				"name" : "Bonepile",
+				"tooltip" : "Can upgrade humanoids lvl1 creatures into skeletons."
+			}
+		}
+	}
+}

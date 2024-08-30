@@ -1,0 +1,86 @@
+{
+	"spartacus" : {
+		"army" : [
+			{ "creature" : "swordsman", "max" : 11, "min" : 5 }
+		],
+		"class" : "gladiator",
+		"images" : {
+			"large" : "spartacus/large.png",
+			"small" : "spartacus/small.png",
+			"specialtyLarge" : "spartacus/specialtyLarge.png",
+			"specialtySmall" : "spartacus/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "leadership" },
+			{ "level" : "basic", "skill" : "offence" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"selfMorale" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "MORALE",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX"
+				},
+				"doubleDmg" :	{ 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "DOUBLE_DAMAGE_CHANCE",
+					"val" : 10
+				},
+				"defensive" :{ 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "DEFENSIVE_STANCE"
+				},
+				"hateSwordman" :	{ 
+						"limiters" : [ 
+							{ 
+								"parameters" : [ "swordsman", true ], 
+								"type" : "CREATURE_TYPE_LIMITER" 
+							} 
+						],
+					"type" : "HATE",
+					"subtype" : "creature.swordsman",
+					"val" : 10
+				},
+				"hateCrusader" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "HATE",
+					"subtype" : "creature.crusader",
+					"val" : 5 
+					},
+				"maxRetal" : { 
+					"type" : "UNLIMITED_RETALIATIONS"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "By far the most famous gladiator in history, Spartacus was a Thracian soldier who had been captured and sold into slavery. Persuaded his fellow gladiators to rebel and escaped to the slopes of nearby Mount Vesuvius. He was eventually cornered and defeated by Crassus.",
+			"name" : "Spartacus",
+			"specialty" : {
+				"description" : "Spartacus is a leader in hand-to-hand combat. Swordsman under his command has morale bonuses, defensive position, critical attack chance and combat bonus against other swordsman.",
+				"name" : "Combat Expertise",
+				"tooltip" : "Swordsman have morale, defensive e ofensive bonus. More damage too against other swordsman."
+			}
+		}
+	}
+}

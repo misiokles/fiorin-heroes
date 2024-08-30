@@ -1,0 +1,47 @@
+{
+	"hood" : {
+		"army" : [
+			{ "creature" : "rogue", "max" : 15, "min" : 5 },
+			{ "creature" : "woodElf", "max" : 10, "min" : 5 },
+			{ "creature" : "monk", "max" : 2, "min" : 1 }
+		],
+		"class" : "archer",
+		"images" : {
+			"large" : "hood/large.png",
+			"small" : "hood/small.png",
+			"specialtyLarge" : "hood/specialtyLarge.png",
+			"specialtySmall" : "hood/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "archery" },
+			{ "skill" : "tactics", "level": "basic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"gold" : {
+					"type": 	"GENERATE_RESOURCE",
+					"subtype": 	"resource.gold",
+					"val" : 	200
+				},
+				"noevil" :	{
+					"type": 	"NONEVIL_ALIGNMENT_MIX"
+				},
+				"diplomacy" : {
+					"type": "WANDERING_CREATURES_JOIN_BONUS",
+					"val" : 1,
+					"valueType": "BASE_NUMBER",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Robin Hood is a heroic outlaw in English folklore who, according to legend, was a highly skilled archer and swordsman. Alongside his band of Merry Men in Sherwood Forest he is said to rob from the rich and give to the poor.",
+			"name" : "Hood",
+			"specialty" : {
+				"description" : "Hood generates a 200/day gold stealing from the rich and gives a diplomacy more chance to wild creatures join the Merry Men cause.",
+				"name" : "Merry Men",
+				"tooltip" : "From the rich and give to the poor"
+			}
+		}
+	}
+}

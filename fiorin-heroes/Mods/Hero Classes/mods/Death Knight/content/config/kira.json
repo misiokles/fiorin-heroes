@@ -1,0 +1,91 @@
+{
+	"kira" : {
+		"army" : [
+			{ "creature" : "vampire", "max" : 8, "min" : 4 }
+		],
+		"class" : "deathknight",
+		"images" : {
+			"large" : "kira/large.png",
+			"small" : "kira/small.png",
+			"specialtyLarge" : "kira/specialtyLarge.png",
+			"specialtySmall" : "kira/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "offence" },
+			{ "level" : "basic", "skill" : "diplomacy" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"sworsman" : {
+					"subtype" : "creature.swordsman",
+					"addInfo" : "creature.vampire",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"crusader" : {
+					"subtype" : "creature.crusader",
+					"addInfo" : "creature.vampireLord",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"monk" : {
+					"subtype" : "creature.monk",
+					"addInfo" : "creature.vampire",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"zealot" :  {
+					"subtype" : "creature.zealot",
+					"addInfo" : "creature.vampireLord",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"cavalier" : {
+					"subtype" : "creature.cavalier",
+					"addInfo" : "creature.vampire",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"champion" : {
+					"subtype" : "creature.champion",
+					"addInfo" : "creature.vampireLord",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"woodElf": {
+					"subtype" : "creature.woodElf",
+					"addInfo" : "creature.vampire",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"grandElf" : {
+					"subtype" : "creature.grandElf",
+					"addInfo" : "creature.vampireLord",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"mage" : {
+					"subtype" : "creature.mage",
+					"addInfo" : "creature.vampire",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"archMage" : {
+					"subtype" : "creature.archMage",
+					"addInfo" : "creature.vampireLord",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"rogue" : {
+					"subtype" : "creature.rogue",
+					"addInfo" : "creature.vampire",
+					"type" : "SPECIAL_UPGRADE"
+				},
+				"nomad" : {
+					"subtype" : "creature.nomad",
+					"addInfo" : "creature.vampire",
+					"type" : "SPECIAL_UPGRADE"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "",
+			"name" : "Kira",
+			"specialty" : {
+				"description" : "Kira can turn any humanoid strong creatures into vampires.",
+				"name" : "Lineage",
+				"tooltip" : "Can upgrade +lvl3 creatures into Vampires and Vampire Lords."
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"paris" : {
+		"army" : [
+			{ "creature" : "pikeman", "max" : 20, "min" : 10 },
+			{ "creature" : "pikeman", "max" : 5, "min" : 4 }
+		],
+		"class" : "archer",
+		"images" : {
+			"large" : "paris/large.png",
+			"small" : "paris/small.png",
+			"specialtyLarge" : "paris/specialtyLarge.png",
+			"specialtySmall" : "paris/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "estates" },
+			{ "skill" : "luck", "level": "basic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"luck" : {
+					"limiters" : [ "SHOOTER_ONLY"],
+					"type" : "LUCK",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX"
+					},
+				"def_redo" : {	
+					"limiters" : [ "SHOOTER_ONLY"],
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : 10
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Paris was the son of Troy king who kidnaped the queen of Sparta, this being one of the immediate causes of the Trojan War. Later in the war, he fatally wounds Achilles in the heel with an arrow.",
+			"name" : "Paris",
+			"specialty" : {
+				"description" : "Shooters under the command of Paris reduce the opponent's defense by 10% when they hit the target",
+				"name" : "Lucky Shot",
+				"tooltip" : "Defense reduction when shooters hit targets"
+			}
+		}
+	}
+}

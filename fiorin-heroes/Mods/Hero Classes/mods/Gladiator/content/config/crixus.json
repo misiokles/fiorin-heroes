@@ -1,0 +1,86 @@
+{
+	"crixus" : {
+		"army" : [
+			{ "creature" : "swordsman", "max" : 5, "min" : 3 },
+			{ "creature" : "swordsman", "max" : 5, "min" : 3 }
+		],
+		"class" : "gladiator",
+		"images" : {
+			"large" : "crixus/large.png",
+			"small" : "crixus/small.png",
+			"specialtyLarge" : "crixus/specialtyLarge.png",
+			"specialtySmall" : "crixus/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "armorer" },
+			{ "level" : "basic", "skill" : "offence" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"fearless" :	{ 
+					"type" : "FEARLESS"
+				},
+				"defRed" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : 10
+				},
+				"addRetal": { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "ADDITIONAL_RETALIATION",
+					"val" : 1
+				},
+				"doubleDmg" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "DOUBLE_DAMAGE_CHANCE",
+					"val" : 5
+				},
+				"health" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+			           "type": "STACK_HEALTH",
+			           "val": 10,
+			           "valueType": "PERCENT_TO_ALL",
+				},
+				"addAtack" :	{ 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "ADDITIONAL_ATTACK",
+					"val" : 1
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Crixus used to be a Gallic gladiator who enjoyed noteworthy success against notably bigger opponents in battle arenas. So after escaping from his gladiator school, he fought in a slave rebellion, helping to defeat large armies amassed by the Roman Senate with relative ease. ",
+			"name" : "Crixus",
+			"specialty" : {
+				"description" : "Swordsman have 10% bonus health, aditional attack and retaliation. Creatures under Crixus command cannot be affected by fear.",
+				"name" : "Fearless Combat",
+				"tooltip" : "Swordsman have bonus health, attack and retaliation."
+			}
+		}
+	}
+}

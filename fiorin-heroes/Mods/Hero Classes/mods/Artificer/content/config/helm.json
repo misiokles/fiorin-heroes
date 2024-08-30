@@ -1,0 +1,53 @@
+{
+	"helm" : {
+		"army" : [
+			{ "creature" : "halfling", "max" : 10, "min" : 5 },
+			{ "creature" : "gremlin", "max" : 20, "min" : 10 }
+		],
+		"class" : "artificer",
+		"images" : {
+			"large" : "helm/large.png",
+			"small" : "helm/small.png",
+			"specialtyLarge" : "helm/specialtyLarge.png",
+			"specialtySmall" : "helm/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "artillery" },
+			{ "level" : "basic", "skill" : "fireMagic" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"ammoCart" : { 
+					"limiters" : [ 
+							{ 
+								"parameters" : [ "ammoCart", false ], 
+								"type" : "CREATURE_TYPE_LIMITER" 
+							} 
+						],
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.landMine",
+						"val" : 100,
+						"valueType" : "BASE_NUMBER"
+					},
+				"landMine" : { 
+					"type" : "SPELL",
+					"subtype" : "spell.landMine",
+					"val" : 1
+				},
+				"landMine2" : { 
+					"type" : "OPENING_BATTLE_SPELL",
+					"subtype" : "spell.landMine"
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Helm is a mad artificer specialized in explosives, bombs and mines. Everything goes boom!",
+			"name" : "Helm",
+			"specialty" : {
+				"description" : "Cast landmine at start combat. Ammo cart cast landmine every turn.",
+				"name" : "Boom!",
+				"tooltip" : "Every combat start with land mines on field. Ammo cart cast landmine every turn."
+			}
+		}
+	}
+}

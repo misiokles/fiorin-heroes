@@ -1,0 +1,15 @@
+{
+	"author" : "FiorIN",
+	"contact" : "http://fior.in/hmm3",
+	"description" : "Archer Heroes",
+	"modType" : "Heroes",
+	"name" : "Archer",
+	"heroes" : [
+		"config/hill",
+		"config/hood",
+		"config/paris",
+		"config/tell",
+		"config/legolas"
+		],
+	"version" : "0.5"
+}

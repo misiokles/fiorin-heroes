@@ -1,0 +1,174 @@
+{
+	"legolas" : {
+		"army" : [
+			{ "creature" : "dwarf", "max" : 10, "min" : 5 },
+			{ "creature" : "swordsman", "max" : 10, "min" : 5 },
+		],
+		"class" : "archer",
+		"images" : {
+			"large" : "legolas/large.png",
+			"small" : "legolas/small.png",
+			"specialtyLarge" : "legolas/specialtyLarge.png",
+			"specialtySmall" : "legolas/specialtySmall.png"
+		},
+		"skills" : [
+			{ "level" : "basic", "skill" : "archery" },
+			{ "level" : "basic", "skill" : "pathfinding" }
+		],
+		"specialty" : {
+			"bonuses" : {
+				"dwarves_luck" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "dwarf", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "LUCK",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX"
+				},
+				"swordmen_luck" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "LUCK",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX"
+				},
+				"dwarves_morale" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "dwarf", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "MORALE",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX"
+				},
+				"swordmen_morale" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "swordsman", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "MORALE",
+					"val" : 1,
+					"valueType" : "INDEPENDENT_MAX"
+				},
+				"elves_shooting" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "woodElf", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "FREE_SHOOTING"
+				},
+				"elves_distance" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "woodElf", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "NO_DISTANCE_PENALTY"
+				},
+				"elves_mpenalty" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "woodElf", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "NO_MELEE_PENALTY"
+				},
+				"elves_wpenalty" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "woodElf", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "NO_WALL_PENALTY"
+				},
+				"sharp_shooting" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "sharpshooter", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "FREE_SHOOTING"
+				},
+				"sharp_mpenalty" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "sharpshooter", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "NO_MELEE_PENALTY"
+				},
+				"elves_wyvern" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "woodElf", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "HATE",
+					"subtype" : "creature.wyvern",
+					"val" : 50
+				},
+				"sharp_wyvern" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "sharpshooter", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "HATE",
+					"subtype" : "creature.wyvern",
+					"val" : 50
+				},
+				"elves_wyvernM" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "woodElf", true ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "HATE",
+					"subtype" : "creature.wyvernMonarch",
+					"val" : 50
+				},
+				"sharp_wyvernM" : { 
+					"limiters" : [ 
+						{ 
+							"parameters" : [ "sharpshooter", false ], 
+							"type" : "CREATURE_TYPE_LIMITER" 
+						} 
+					],
+					"type" : "HATE",
+					"subtype" : "creature.wyvernMonarch",
+					"val" : 50
+				}
+			}
+		},
+		"texts" : {
+			"biography" : "Legolas was an elf of the Woodland Realm of Mirkwood. He was of Sindarin heritage, being the only recorded son of King Thranduil. The most important events of his life are surrounded by the War of the Ring, during which he was the Elven representative in the Fellowship of the Ring; his Elven characteristics, such as superior sight and hearing, lightness of foot, and skilled archery, were valuable assets. ",
+			"name" : "Legolas",
+			"specialty" : {
+				"description" : "Wood Elves and Sharpshooters under Legolas command have no distance, wall and melee penalty. They too have a 50% bonus damage against Wyverns. Dwarves and swordsman fighting with Legolas have a luck and moral bonus.",
+				"name" : "Elven Fellowship",
+				"tooltip" : "Swordsmen and Dwarves gets luck and moral bonus. Archer Elves and Shapshooters have no distance, melee and wall penalty."
+			}
+		}
+	}
+}

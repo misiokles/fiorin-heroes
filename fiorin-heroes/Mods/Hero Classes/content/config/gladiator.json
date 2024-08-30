@@ -1,0 +1,78 @@
+{
+	"gladiator" :
+	{
+		"animation" : {
+			"battle" : 
+			{
+				"female" : "gladiator/male.def",
+				"male"   : "gladiator/female.def"
+			}
+		},
+		"mapObject" : {
+			"templates" : {
+				"default" : { 
+					"animation" : "gladiator/adventure.def",
+					"editorAnimation": "gladiator/editor.def" 
+				}
+			}
+		},
+		"name" : "Gladiator",
+		"faction" : "castle",
+		"commander" : "ironGolem",
+		"affinity" : "might",
+		"primarySkills" :
+		{
+			"attack"     : 3,
+			"defence"    : 2,
+			"spellpower" : 0,
+			"knowledge"  : 1
+		},
+		"lowLevelChance" :
+		{
+			"attack"     : 40,
+			"defence"    : 30,
+			"spellpower" : 10,
+			"knowledge"  : 20
+		},
+		"highLevelChance" :
+		{
+			"attack"     : 30,
+			"defence"    : 30,
+			"spellpower" : 20,
+			"knowledge"  : 20
+		},
+		"secondarySkills" :
+		{
+			"archery" : 4,
+			"armorer" : 7,
+			"artillery" : 3,
+			"ballistics" : 2,
+			"diplomacy" : 1,
+			"intelligence" : 2,
+			"leadership" : 5,
+			"learning" : 6,
+			"logistics" : 6,
+			"luck" : 7,
+			"navigation" : 4,
+			"offence" : 8,
+			"pathfinding" : 6,
+			"resistance" : 3,
+			"scouting" : 3,
+			"tactics" : 6,
+			"firstAid" : 3
+		},
+		"defaultTavern" : 5,
+		"tavern" :
+		{
+				"castle" : 3,
+				"conflux" : 0,
+				"dungeon" : 5,
+				"fortress" : 8,
+				"inferno" : 0,
+				"necropolis" : 3,
+				"rampart" : 4,
+				"stronghold" : 10,
+				"tower" : 2
+		}
+	}
+}
