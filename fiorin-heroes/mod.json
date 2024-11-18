@@ -6,14 +6,21 @@
     "licenseURL" : "http://creativecommons.org/licenses/by-sa/4.0/deed",
     "contact" : "http://fior.in",
     "modType" : "Heroes",
-    "version" : "0.2",
+    "version" : "0.21",
 	"compatibility" :
 	{
 		"min" : "1.5.0"
 	},
 	"changelog" :
-	{
+	{       "0.21"   : [ "Polish translation added by FallainBlack" ]
 		"0.2"   : [ "Update to vcmi-1.5 format" ],
 		"0.1"   : [ "Initial release" ]
+	}
+        "polish" : {
+		"name" : "Paczka Bohaterów Fiorina",
+		"description" : "Paczka potężnych (op) bohaterów, których można użyć na potrzeby map i  kampanii",
+		"translations" : [
+			"translation/fiorin-heroes/polish.json"
+		]
 	}
 }
